@@ -1,0 +1,72 @@
+p{
+	color: black;
+	font-family: Georgia;	
+}
+body{
+	background: white;
+}
+.highlight {
+    background: lightyellow;
+}
+
+.bottomline {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.jump:hover {
+    font-size: 150%;
+}
+
+#main {
+    color: blue;
+}
+
+#education {
+    color: darkred;
+}
+
+#experience {
+    color: green;
+}
+
+.container-1{
+	display: flex;
+	flex-wrap: wrap;
+}
+.container-2{
+	display: flex;
+	flex-wrap:wrap;
+}
+
+.container-1 div, .container-2 div{
+    border:2px #ccc solid;
+    padding:10px;
+ }
+.box-1{
+    flex:2;
+    order:1;
+ }
+  
+.box-2{
+    flex:1;
+    order:2;
+}
+.container-2-box{
+    flex-basis: 30%;  
+}
+@media (max-width: 600px){
+  .container-1{ 
+  justify-content: center; 
+  }
+  .box-1, .box-2{ 
+  flex-basis: 100%;  
+  }
+
+  .container-2{ 
+  justify-content: center; 
+  }
+  .container-2-box{ 
+  flex-basis: 100%; 
+  }
+}
